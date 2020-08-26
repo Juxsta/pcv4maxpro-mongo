@@ -1,0 +1,22 @@
+{
+    "collection": "users",
+    "database": "Primary",
+    "id": "5f3eacb716a9820f4e3f66d4",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "_id": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {},
+        "title": "user"
+    }
+}
