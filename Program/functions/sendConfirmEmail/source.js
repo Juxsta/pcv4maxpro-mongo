@@ -48,7 +48,9 @@
   */
 
   exports = ({ token, tokenId, username }) => {
+    const sgMail = require('@sendgrid/mail');
     const api_key = context.values.get("SENDGRID_API_KEY")
+    sgMail.setApiKey(api_key)
     const msg = {
   to: username,
   from: 'engine@pilotcity.com',
